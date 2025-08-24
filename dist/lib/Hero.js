@@ -1,0 +1,4 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+export function Hero({ kicker, title, subtitle, className = '', children }) {
+    return (_jsxs("header", { className: ["max-w-6xl mx-auto px-4 pt-12 pb-10 text-center", className].join(' '), children: [kicker ? _jsx("div", { className: "inline-flex items-center gap-2 px-2.5 py-1.5 rounded-full text-[11px] border border-stroke/60 bg-card/70 backdrop-blur mb-4", children: kicker }) : null, _jsx("h1", { className: "text-balance text-[clamp(26px,6.5vw,56px)] leading-[1.08] font-extrabold tracking-tight", children: title }), subtitle ? _jsx("p", { className: "sub text-balance text-[clamp(14px,2.4vw,19px)] max-w-3xl mx-auto mt-4", children: subtitle }) : null, children ? _jsx("div", { className: "mt-6 flex flex-wrap items-center justify-center gap-3", children: children }) : null] }));
+}
